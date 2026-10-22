@@ -1,0 +1,7 @@
+# Fluent-Qt 的 PySide6 绑定（README 中的 PyPI 地址：https://pypi.org/project/FluentQt/）
+# 要求 Python >= 3.11, < 3.14
+FluentQt==1.10.2
+
+# FluentQt 1.10.2 绑定所需的 Qt for Python 版本，需与 FluentQt 保持一致
+PySide6-Essentials==6.9.3
+shiboken6==6.9.3

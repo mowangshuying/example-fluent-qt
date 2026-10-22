@@ -1,0 +1,11 @@
+# Python 虚拟环境
+.venv/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 构建与分发产物
+build/
+dist/
+*.egg-info/
