@@ -8,6 +8,7 @@ from PySide6.QtGui import *
 ### fluent-qt
 import fluentqt
 from fluentqt.windowing import Window
+from fluentqt.basicinput import Button
 
 if __name__ == "__main__":
     fluentqt.prepare_high_dpi_application()
@@ -17,6 +18,17 @@ if __name__ == "__main__":
 
     w = Window()
     w.setWindowTitle("FluentQt Hello world!");
+    
+    
+    content = QWidget()
+    layout = QVBoxLayout(content)
+    layout.setContentsMargins(32, 32, 32, 32)
+    
+    button = Button("Hello from FluentQt", content)
+    button.setFluentStyle(Button.ButtonStyle.Accent)
+    layout.addWidget(button, 0, Qt.AlignmentFlag.AlignCenter)
+    
+    w.setContentWidget(content)
 
     w.resize(800, 600)
     w.show()
